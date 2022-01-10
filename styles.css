@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: lightgrey;
 }
 .container {
@@ -15,4 +15,59 @@ body {
   font-size: 90px;
   min-width: 150px;
   min-height: 150px;
+} */
+
+:root {
+  --purple: #3e0249;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--purple);
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gameboard {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+  font-size: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  color: white;
+  border-color: var(--purple);
+  font-size: 18px;
+  transition: 200ms transform;
+}
+border:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
