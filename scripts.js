@@ -160,4 +160,4 @@ const restart = () => {
 restartBtn.addEventListener('click', restart);
 
 restart();
-drawBoard();
+drawBoard(); 
